@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luthier: Rule Reference & Index</title>
+    <title>Luthier: 規則參考與索引</title>
     <style>
         :root {
-            --primary-color: #8B4513; /* SaddleBrown */
+            --primary-color: #8B4513; /* 馬鞍棕色 */
             --secondary-color: #5D4037;
-            --accent-color: #CD853F; /* Peru */
-            --bg-color: #FDF5E6; /* OldLace */
+            --accent-color: #CD853F; /* 秘魯色 */
+            --bg-color: #FDF5E6; /* 舊蕾絲色 */
             --text-color: #2F2F2F;
             --paper-texture: #fffef8;
         }
 
         body {
-            font-family: 'Garamond', 'Georgia', serif;
+            font-family: "Noto Serif TC", "PMingLiU", "Garamond", serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
@@ -24,7 +24,7 @@
             line-height: 1.6;
         }
 
-        /* Sidebar Navigation */
+        /* 側邊導航欄 */
         nav {
             width: 250px;
             background-color: var(--secondary-color);
@@ -60,7 +60,7 @@
             color: var(--accent-color);
         }
 
-        /* Main Content Area */
+        /* 主要內容區域 */
         main {
             flex-grow: 1;
             padding: 40px;
@@ -68,7 +68,7 @@
             position: relative;
         }
 
-        /* Header & Search */
+        /* 頁首與搜尋 */
         header {
             margin-bottom: 40px;
             text-align: center;
@@ -99,7 +99,7 @@
             font-family: inherit;
         }
 
-        /* Rule Sections */
+        /* 規則區塊 */
         .rule-section {
             background: var(--paper-texture);
             border: 1px solid #dcdcdc;
@@ -126,7 +126,7 @@
             padding: 0 4px;
         }
 
-        /* Lists and Tables */
+        /* 列表與表格 */
         ul { 
             padding-left: 20px; 
         }
@@ -135,7 +135,7 @@
             margin-bottom: 8px;
         }
 
-        /* Action Boxes */
+        /* 動作提示框 */
         .action-box {
             background-color: #fdfbf7;
             border-left: 4px solid var(--accent-color);
@@ -149,7 +149,7 @@
             margin-left: 5px;
         }
 
-        /* Responsive */
+        /* 響應式設計 */
         @media (max-width: 768px) {
             body { flex-direction: column; }
             nav { width: 100%; height: auto; padding: 10px; }
@@ -160,184 +160,184 @@
 <body>
 
     <nav>
-        <h2>Index</h2>
+        <h2>索引</h2>
         <ul>
-            <li><a href="#overview">Game Overview</a></li>
-            <li><a href="#setup">Setup Highlights</a></li>
-            <li><a href="#structure">Round Structure</a></li>
-            <li><a href="#planning">Planning & Workers</a></li>
-            <li><a href="#resolution">Resolution & Priority</a></li>
-            <li><a href="#market">The Market</a></li>
-            <li><a href="#main-board">Main Board Locations</a></li>
-            <li><a href="#workbench">The Workbench</a></li>
-            <li><a href="#orchestra">The Orchestra & First Chair</a></li>
-            <li><a href="#endgame">End Game Scoring</a></li>
+            <li><a href="#overview">遊戲概覽</a></li>
+            <li><a href="#setup">設置重點</a></li>
+            <li><a href="#structure">回合結構</a></li>
+            <li><a href="#planning">規劃與工人</a></li>
+            <li><a href="#resolution">結算與優先權</a></li>
+            <li><a href="#market">市場</a></li>
+            <li><a href="#main-board">主版圖地點</a></li>
+            <li><a href="#workbench">工作台</a></li>
+            <li><a href="#orchestra">樂團與首席</a></li>
+            <li><a href="#endgame">遊戲結束計分</a></li>
         </ul>
     </nav>
 
     <main>
         <header>
             <h1>Luthier</h1>
-            <p>The Art of the Instrument - Rules Reference</p>
+            <p>樂器工匠的藝術 - 規則參考</p>
             <div class="search-container">
-                <input type="text" id="searchBar" placeholder="Search rules (e.g., 'First Chair', 'Repair', 'Tiebreaker')..." onkeyup="filterRules()">
+                <input type="text" id="searchBar" placeholder="搜尋規則 (例如：'首席', '維修', '平手')..." onkeyup="filterRules()">
             </div>
         </header>
 
         <div id="overview" class="rule-section">
-            <h2>Game Overview</h2>
-            [cite_start]<p>Players act as families of artisans satisfying patrons' requests for fine instruments, performances, and repairs[cite: 1849]. [cite_start]The goal is to earn the most <strong>Prestige Points</strong> over 6 rounds[cite: 2135, 2140].</p>
+            <h2>遊戲概覽</h2>
+            [cite_start]<p>玩家扮演工匠家族，透過滿足贊助人對精緻樂器、演奏和維修的需求來追求聲望。目標是在 6 個回合中獲得最多的<strong>聲望點數 (Prestige Points)</strong> [cite: 295]。</p>
             <ul>
-                [cite_start]<li><strong>Prestige:</strong> Earned by making instruments, satisfying patrons, performing, repairing, and claiming awards[cite: 2136].</li>
-                <li><strong>Patron Patience:</strong> Patrons provide gifts as long as patience endures. [cite_start]If patience runs out, they abandon you, costing prestige[cite: 1851].</li>
+                [cite_start]<li><strong>聲望：</strong> 透過製作樂器、滿足贊助人、演奏、維修樂器以及爭奪公共獎勵和首席位置來獲得 [cite: 296, 297]。</li>
+                [cite_start]<li><strong>贊助人耐心：</strong> 只要贊助人還有耐心，他們就會提供禮物。如果被忽視太久導致耐心耗盡，他們會離開並扣除你的家族聲望 [cite: 10, 11]。</li>
             </ul>
         </div>
 
         <div id="setup" class="rule-section">
-            <h2>Setup Highlights</h2>
+            <h2>設置重點</h2>
             <ul>
-                [cite_start]<li><strong>Start Player:</strong> Determined by the lowest number on the Luthier Family Tile[cite: 2085].</li>
-                [cite_start]<li><strong>Hand Limit:</strong> There is no explicit hand limit for cards, but storage has a limit of <strong>9 materials</strong> of any type[cite: 2125].</li>
-                [cite_start]<li><strong>Starting Resources:</strong> Varies by Luthier Family Tile selected[cite: 2077].</li>
-                [cite_start]<li><strong>2-Player Setup:</strong> Requires special Orchestra setup cards and cover-up tiles[cite: 1975, 1976].</li>
+                [cite_start]<li><strong>起始玩家：</strong> 由工匠家族板塊上數字最小的玩家開始 [cite: 245]。</li>
+                [cite_start]<li><strong>手牌與上限：</strong> 卡牌沒有手牌上限，但材料儲存區上限為任何類型的材料共 <strong>9 個</strong> [cite: 285]。</li>
+                [cite_start]<li><strong>起始資源：</strong> 根據所選的工匠家族板塊上印製的內容拿取 [cite: 237]。</li>
+                [cite_start]<li><strong>2人遊戲：</strong> 需要使用特殊的樂團設置卡和覆蓋板塊 [cite: 134, 136]。</li>
             </ul>
         </div>
 
         <div id="structure" class="rule-section">
-            <h2>Round Structure</h2>
-            <p>The game is played over 6 rounds. Each round consists of:</p>
+            <h2>回合結構</h2>
+            [cite_start]<p>遊戲共進行 6 個回合。每個回合包含以下階段 [cite: 300, 301]：</p>
             <ol>
-                <li><strong>Start of Round:</strong> 
+                <li><strong>回合開始 (Start of Round)：</strong> 
                     <ul>
-                        [cite_start]<li>Advance Patron patience cubes and gain gifts[cite: 2216].</li>
-                        [cite_start]<li>Place up to 2 instrument cards from hand to Roughing Bench[cite: 2217].</li>
+                        [cite_start]<li>推進所有活躍贊助人的耐心方塊並獲得禮物 [cite: 376]。</li>
+                        [cite_start]<li>從手牌中放置最多 2 張樂器卡到「粗製台 (Roughing Bench)」 [cite: 377]。</li>
                     </ul>
                 </li>
-                [cite_start]<li><strong>Planning Phase:</strong> Place workers on locations[cite: 2239].</li>
-                [cite_start]<li><strong>Resolution Phase:</strong> Activate locations in order[cite: 2266].</li>
-                [cite_start]<li><strong>End of Round:</strong> Update turn order, refresh market/cards, advance round tracker[cite: 2335].</li>
+                [cite_start]<li><strong>規劃階段 (Planning Phase)：</strong> 玩家輪流將工人放置在地點上 [cite: 302]。</li>
+                [cite_start]<li><strong>結算階段 (Resolution Phase)：</strong> 逐一啟動地點並結算行動 [cite: 304]。</li>
+                [cite_start]<li><strong>回合結束 (End of Round)：</strong> 更新順位、刷新市場與卡牌、推進回合標記 [cite: 306]。</li>
             </ol>
         </div>
 
         <div id="planning" class="rule-section">
-            <h2>Planning & Worker Placement</h2>
-            [cite_start]<p><strong>Placement:</strong> In turn order, place exactly one worker chip (face down) on a location[cite: 2240].</p>
+            <h2>規劃與工人放置</h2>
+            [cite_start]<p><strong>放置：</strong> 依照回合順位，每位玩家輪流將正好一個工人指示物（面朝下）放置在一個地點上 [cite: 400]。</p>
             <ul>
-                [cite_start]<li><strong>Apprentices:</strong> You may stack up to 3 apprentices on a worker to increase its skill by +1 per apprentice[cite: 2245, 2260].</li>
-                <li><strong>Stacking:</strong> You may place on top of existing chips. [cite_start]Multiple chips from the same player are allowed[cite: 2242, 2243].</li>
-                <li><strong>Worker Numbers:</strong> Workers #1, #3, #5 available at start. [cite_start]#2 unlocks Round 3, #4 unlocks Round 5[cite: 2252, 2350].</li>
+                [cite_start]<li><strong>學徒 (Apprentices)：</strong> 你可以在工人身上疊加最多 3 個學徒，每個學徒可使該地點的結算技能 +1 [cite: 420]。</li>
+                [cite_start]<li><strong>堆疊：</strong> 你可以放置在現有的指示物上方。同一地點允許放置多個自己的工人 [cite: 402, 403]。</li>
+                [cite_start]<li><strong>工人編號：</strong> 遊戲開始時擁有工人 #1, #3, #5。第 3 回合解鎖 #2，第 5 回合解鎖 #4 [cite: 412]。</li>
             </ul>
         </div>
 
         <div id="resolution" class="rule-section">
-            <h2>Resolution & Priority Order</h2>
-            <p>Locations are activated one by one. When a location activates, reveal all chips. Actions are taken in <strong>Priority Order</strong>:</p>
+            <h2>結算與優先順序</h2>
+            [cite_start]<p>地點會逐一啟動。當一個地點啟動時，翻開所有指示物。行動依照<strong>優先順序 (Priority Order)</strong> 執行 [cite: 449]：</p>
             <ol>
-                [cite_start]<li><strong>Highest Skill:</strong> Worker Number + Apprentices[cite: 2291].</li>
-                [cite_start]<li><strong>Tie-Breaker:</strong> First placed goes first[cite: 2294].</li>
+                [cite_start]<li><strong>最高技能：</strong> 工人數字 + 學徒數量 [cite: 451]。</li>
+                [cite_start]<li><strong>平手判定：</strong> 先放置的工人優先執行 [cite: 454]。</li>
             </ol>
             <div class="action-box">
-                [cite_start]<strong>Alternate Action:</strong> At any location (Main Board or Workbench), a player may always choose to take <strong>$2</strong> instead of the location's action[cite: 2314].
+                [cite_start]<strong>替代行動：</strong> 在任何地點（包含主版圖或工作台），玩家總是能選擇拿取 <strong>$2</strong> 來取代該地點的列表行動 [cite: 474]。
             </div>
         </div>
 
         <div id="market" class="rule-section">
-            <h2>The Market</h2>
-            <p>This is a "free action" taken once per Resolution Phase on your turn. [cite_start]It does not require a worker[cite: 2277, 2279].</p>
+            <h2>市場 (The Market)</h2>
+            [cite_start]<p>這是結算階段中，輪到你的回合時可執行的「自由行動」（每回合限一次）。不需要使用工人 [cite: 437, 439]。</p>
             <ul>
-                <li><strong>Buy/Sell:</strong> Animal, Wood, Metal. [cite_start]Prices fluctuate based on the round card[cite: 2318]. [cite_start]You cannot buy and sell the same material in one round[cite: 2321].</li>
-                [cite_start]<li><strong>Hire Apprentice:</strong> Cost is $4[cite: 2326].</li>
-                <li><strong>Training:</strong> Advance Performance or Craft track. [cite_start]Cost is $15 per step[cite: 2326].</li>
-                [cite_start]<li><strong>Inspiration Discount:</strong> Spend 1 Inspiration to reduce the cost of an item/action by $1 (1:1 ratio)[cite: 2328].</li>
+                [cite_start]<li><strong>買/賣：</strong> 動物材料、木材、金屬。價格依據當前市場卡波動。同一回合內不能對同一種材料既買又賣 [cite: 479, 481]。</li>
+                [cite_start]<li><strong>雇用學徒：</strong> 每個 $4 [cite: 486]。</li>
+                [cite_start]<li><strong>培訓：</strong> 推進演奏軌或工藝軌。每推進一格花費 $15 [cite: 486]。</li>
+                [cite_start]<li><strong>靈感折扣：</strong> 花費 1 個靈感標記可使物品/行動成本減少 $1（1:1 比例） [cite: 488]。</li>
             </ul>
         </div>
 
         <div id="main-board" class="rule-section">
-            <h2>Main Board Locations</h2>
+            <h2>主版圖地點</h2>
             
-            <h3>1. [cite_start]Salon (Patrons) [cite: 2403]</h3>
+            <h3>1. 沙龍 (Salon) - 贊助人</h3>
             <ul>
-                <li><strong>Main Action:</strong> Take a face-up Patron card and place it on your board (max 3 active). [cite_start]Gain placement bonus immediately[cite: 2405].</li>
-                [cite_start]<li><strong>Alternate:</strong> Take 2 Inspiration and 1 Apprentice[cite: 2407].</li>
-                [cite_start]<li><strong>4+ Skill Bonus:</strong> Move one patience cube left one step and gain the gift[cite: 2408].</li>
+                [cite_start]<li><strong>主要行動：</strong> 拿取一張面朝上的贊助人卡並放置在個人版圖上（最多 3 位活躍贊助人）。立即獲得放置獎勵 [cite: 565, 272]。</li>
+                [cite_start]<li><strong>替代行動：</strong> 從市場拿取 2 個靈感和 1 個學徒 [cite: 567]。</li>
+                [cite_start]<li><strong>4+ 技能獎勵：</strong> 將一個耐性方塊向左移一格，並獲得該贊助人提供的任一禮物 [cite: 568, 571]。</li>
             </ul>
 
-            <h3>2. [cite_start]Guild (Instruments) [cite: 2466]</h3>
+            <h3>2. 公會 (Guild) - 樂器圖紙</h3>
             <ul>
-                [cite_start]<li><strong>Main Action:</strong> Take a face-up Instrument card into hand[cite: 2469].</li>
-                [cite_start]<li><strong>Alternate:</strong> Take 1 Metal[cite: 2471].</li>
-                [cite_start]<li><strong>4+ Skill Bonus:</strong> Take 1 Material of choice AND place 1 instrument from hand onto Roughing Bench[cite: 2472].</li>
+                [cite_start]<li><strong>主要行動：</strong> 拿取一張面朝上的樂器卡入手 [cite: 629]。</li>
+                [cite_start]<li><strong>替代行動：</strong> 拿取 1 個金屬材料 [cite: 631]。</li>
+                [cite_start]<li><strong>4+ 技能獎勵：</strong> 拿取 1 個任意材料，並可立即從手中放置 1 張樂器圖紙到粗製台 [cite: 632]。</li>
             </ul>
 
-            <h3>3. [cite_start]Perform [cite: 2545]</h3>
+            <h3>3. 演奏 (Perform)</h3>
             <ul>
-                <li><strong>Main Action:</strong> Choose performance card. Roll dice + Worker Skill. Gain money/prestige. [cite_start]If Medium/High success, place token in Orchestra[cite: 2527, 2530].</li>
-                [cite_start]<li><strong>Alternate:</strong> Take 3 Animal[cite: 2533].</li>
-                [cite_start]<li><strong>4+ Skill Bonus:</strong> Advance on Performance Skill Track[cite: 2534].</li>
-                [cite_start]<li><strong>Inspiration:</strong> Spend after rolling to increase result (+1 per token)[cite: 2540].</li>
+                [cite_start]<li><strong>主要行動：</strong> 選擇演奏卡。擲骰 + 工人技能。獲得金錢/聲望。若獲得中等/高等成果，在樂團放置演奏標記 [cite: 687, 690]。</li>
+                [cite_start]<li><strong>替代行動：</strong> 拿取 3 個動物材料 [cite: 693]。</li>
+                [cite_start]<li><strong>4+ 技能獎勵：</strong> 在演奏技能軌 (Performance Skill Track) 上推進一格 [cite: 694]。</li>
+                [cite_start]<li><strong>靈感：</strong> 擲骰後可花費靈感來增加結果（每個標記 +1）[cite: 700]。</li>
             </ul>
 
-            <h3>4. [cite_start]Repair [cite: 2589]</h3>
+            <h3>4. 維修 (Repair)</h3>
             <ul>
-                <li><strong>Main Action:</strong> Pay materials listed on Repair card. Gain prestige. [cite_start]Place repair token in Orchestra[cite: 2594].</li>
-                [cite_start]<li><strong>Alternate:</strong> Take 2 Wood[cite: 2604].</li>
-                [cite_start]<li><strong>4+ Skill Bonus:</strong> Advance on Craft Skill Track[cite: 2605].</li>
-                [cite_start]<li><strong>Inspiration:</strong> 2 Inspiration = 1 Material substitute[cite: 2607].</li>
+                [cite_start]<li><strong>主要行動：</strong> 支付維修卡上列出的材料。獲得聲望。在樂團放置維修標記 [cite: 754, 760]。</li>
+                [cite_start]<li><strong>替代行動：</strong> 拿取 2 個木材 [cite: 764]。</li>
+                [cite_start]<li><strong>4+ 技能獎勵：</strong> 在工藝技能軌 (Craft Skill Track) 上推進一格 [cite: 765]。</li>
+                [cite_start]<li><strong>靈感：</strong> 花費 2 個靈感可抵用 1 個維修所需材料 [cite: 767]。</li>
             </ul>
 
-            <h3>5. [cite_start]Balcony [cite: 2624]</h3>
+            <h3>5. 露台 (Balcony)</h3>
             <ul>
-                [cite_start]<li><strong>Main Action:</strong> Score an achieved Public Award[cite: 2632].</li>
-                [cite_start]<li><strong>Alternate:</strong> Take $6 OR Take 2 Apprentices[cite: 2633, 2634].</li>
-                [cite_start]<li><strong>4+ Skill Bonus:</strong> Advance on Reputation Track[cite: 2635].</li>
-                [cite_start]<li><strong>Turn Order:</strong> Workers here determine next round's turn order[cite: 2638].</li>
+                [cite_start]<li><strong>主要行動：</strong> 領取一個已達成條件的公共獎勵 [cite: 792]。</li>
+                [cite_start]<li><strong>替代行動：</strong> 拿取 $6 或 從市場拿取 2 個學徒 [cite: 793, 794]。</li>
+                [cite_start]<li><strong>4+ 技能獎勵：</strong> 在聲望軌 (Reputation Track) 上推進一格 [cite: 795]。</li>
+                [cite_start]<li><strong>順位變更：</strong> 此處的工人將決定下一回合的玩家順位 [cite: 800]。</li>
             </ul>
         </div>
 
         <div id="workbench" class="rule-section">
-            <h2>The Workbench (Roughing & Finishing)</h2>
-            <p>Only the owner can place workers here. [cite_start]You may resolve actions for multiple workers or double-actions if unlocked[cite: 2699, 2741].</p>
+            <h2>工作台 (The Workbench)</h2>
+            [cite_start]<p>只有擁有者能在這裡放置工人。若解鎖技能，可一次結算多個工人或執行雙倍行動 [cite: 432, 901]。</p>
             
-            [cite_start]<h3>Roughing Bench (Left) [cite: 2723]</h3>
+            <h3>粗製台 (Roughing Bench - 左側)</h3>
             <ul>
-                <li><strong>Action:</strong> Pay roughing cost. [cite_start]Move card to Finishing Bench[cite: 2733].</li>
-                [cite_start]<li><strong>3+ Skill Bonus:</strong> Gain 2 Inspiration[cite: 2735].</li>
-                [cite_start]<li><strong>5+ Skill Bonus:</strong> Reduce material cost by 1[cite: 2736].</li>
+                [cite_start]<li><strong>行動：</strong> 支付粗製成本。將卡牌移至精製台 [cite: 893, 894]。</li>
+                [cite_start]<li><strong>3+ 技能獎勵：</strong> 獲得 2 個靈感 [cite: 895]。</li>
+                [cite_start]<li><strong>5+ 技能獎勵：</strong> 本次行動減少 1 個材料需求 [cite: 896]。</li>
             </ul>
 
-            [cite_start]<h3>Finishing Bench (Right) [cite: 2726]</h3>
+            <h3>精製台 (Finishing Bench - 右側)</h3>
             <ul>
-                <li><strong>Action:</strong> Pay finishing cost. Gain Prestige. [cite_start]Place Instrument Token in Orchestra[cite: 2748].</li>
-                [cite_start]<li><strong>Patrons:</strong> You may give the finished instrument to a Patron to satisfy a requirement (resets patience)[cite: 2791].</li>
-                [cite_start]<li><strong>4+ Skill Bonus:</strong> Reduce material cost by 1[cite: 2758].</li>
-                [cite_start]<li><strong>6+ Skill Bonus:</strong> Double the Orchestra placement bonus[cite: 2759].</li>
+                [cite_start]<li><strong>行動：</strong> 支付精製成本。獲得聲望。在樂團放置樂器標記 [cite: 908, 910, 911]。</li>
+                [cite_start]<li><strong>贊助人：</strong> 你可以將完成的樂器交給贊助人以滿足需求（重置耐心） [cite: 951, 953]。</li>
+                [cite_start]<li><strong>4+ 技能獎勵：</strong> 本次行動減少 1 個材料需求 [cite: 918]。</li>
+                [cite_start]<li><strong>6+ 技能獎勵：</strong> 樂團放置獎勵雙倍 [cite: 919]。</li>
             </ul>
         </div>
 
         <div id="orchestra" class="rule-section">
-            <h2>The Orchestra & First Chair</h2>
-            <p>Tokens are placed here via Performing, Repairing, or Finishing Instruments.</p>
+            <h2>樂團與首席 (The Orchestra & First Chair)</h2>
+            [cite_start]<p>標記透過演奏、維修或完成樂器放置於此 [cite: 991, 992]。</p>
             
-            [cite_start]<h3>First Chair Rules [cite: 2830]</h3>
-            <p>The "First Chair" is the top slot of a section. [cite_start]Only one token can occupy it (except for Rare Instruments)[cite: 2835, 2757].</p>
+            <h3>首席規則 (First Chair Rules)</h3>
+            [cite_start]<p>「首席」是該區域最上面的位置。只有一個標記能佔據它（稀有樂器除外）[cite: 990, 995]。</p>
             <ul>
-                [cite_start]<li><strong>Empty Seat:</strong> Place token, claim bonus[cite: 2835].</li>
-                <li><strong>Instrument Token:</strong> Always steals the chair from Performance/Repair tokens. [cite_start]Moves previous token "below the line"[cite: 2838].</li>
-                [cite_start]<li><strong>Performance/Repair Token:</strong> Can only steal if you now have <em>more</em> tokens in that section than the current owner[cite: 2846].</li>
-                [cite_start]<li><strong>Below the Line:</strong> If you cannot claim First Chair, place token below the line and gain <strong>$2 OR 1 Inspiration</strong>[cite: 2844].</li>
+                [cite_start]<li><strong>空位：</strong> 放置標記，領取獎勵 [cite: 995]。</li>
+                [cite_start]<li><strong>樂器標記：</strong> 總是能搶走「演奏」或「維修」標記的首席位置。將原標記移至「線下」 [cite: 998]。</li>
+                [cite_start]<li><strong>演奏/維修標記：</strong> 只有當你在該區域擁有的標記數量<em>多於</em>當前首席持有者時，才能搶走首席 [cite: 1006]。</li>
+                [cite_start]<li><strong>線下 (Below the Line)：</strong> 如果你無法搶到首席，將標記放在線下並獲得 <strong>$2 或 1 個靈感</strong> [cite: 996, 1004]。</li>
             </ul>
         </div>
 
         <div id="endgame" class="rule-section">
-            <h2>End Game Scoring</h2>
-            <p>The game ends after Round 6. Add the following to current Prestige:</p>
+            <h2>遊戲結束計分</h2>
+            [cite_start]<p>第 6 回合結束後遊戲結束。將以下分數加到當前聲望中 [cite: 1049]：</p>
             <ol>
-                [cite_start]<li><strong>First Chairs:</strong> Score points based on total chairs held (e.g., 1 chair = 4pts, 6 chairs = 139pts)[cite: 2890, 2905].</li>
-                [cite_start]<li><strong>Patron (B) Powers:</strong> Score variable points based on card text[cite: 2896].</li>
-                [cite_start]<li><strong>Unfinished Instruments:</strong> Instruments on Finishing Bench score half prestige (rounded up)[cite: 2896].</li>
-                [cite_start]<li><strong>Personal Goals:</strong> Score highest level achieved[cite: 2902].</li>
-                [cite_start]<li><strong>Specialty Workers:</strong> 1 Point per card[cite: 2903].</li>
-                <li><strong>Leftovers:</strong> 1 Point per 10 total value (money + materials + inspiration + apprentices). [cite_start]Use money as tie-breaker[cite: 2904, 2908].</li>
+                [cite_start]<li><strong>首席位置：</strong> 根據佔據的席位總數計分（例如：1 個席位 = 4分，6 個席位 = 139分） [cite: 1050, 1065]。</li>
+                [cite_start]<li><strong>贊助人 (B) 能力：</strong> 根據卡牌文字獲得變動分數 [cite: 1056]。</li>
+                [cite_start]<li><strong>未完成樂器：</strong> 精製台上的樂器獲得一半聲望分（無條件進位） [cite: 1056]。</li>
+                [cite_start]<li><strong>個人目標：</strong> 獲得已達成的最高等級分數 [cite: 1062]。</li>
+                [cite_start]<li><strong>特殊工人：</strong> 每張卡 1 分 [cite: 1063]。</li>
+                [cite_start]<li><strong>剩餘資源：</strong> 每 10 個總價值（錢+材料+靈感+學徒）獲得 1 分。剩餘金錢作為平手決勝依據 [cite: 1064, 1068]。</li>
             </ol>
         </div>
 
@@ -347,7 +347,7 @@
         function filterRules() {
             var input, filter, main, sections, p, i, txtValue;
             input = document.getElementById('searchBar');
-            filter = input.value.toUpperCase();
+            filter = input.value.toUpperCase(); // 對中文來說這步影響不大，但保留邏輯
             main = document.querySelector("main");
             sections = main.getElementsByClassName('rule-section');
 
